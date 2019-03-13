@@ -1,0 +1,125 @@
+body {
+  margin: 40px auto;
+  max-width: 660px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0;
+  font-family: helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+#heading svg {
+  display: block;
+  margin: auto;
+}
+
+#heading p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px 20px 10px;
+  padding: 0;
+  line-height: 0;
+}
+
+.link a {
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  /* for aligning the text vertically and horizontally */
+  /* https://stackoverflow.com/a/22218694 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.link:hover .overlay {
+  visibility: visible;
+}
+
+.link p {
+  color: white;
+  margin: 0;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#signature {
+  margin: auto;
+  width: 50px;
+}
+
+#signature a {
+  display: block;
+  text-decoration: none;
+  color: #983626;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#signature svg {
+  display: block;
+  margin-top: 8px;
+}
+
+#signature:hover a {
+  color: #6da0bd;
+}
+
+#signature:hover rect {
+  fill: #6da0bd;
+}
+
+@media (max-width: 690px ) {
+  body {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .overlay { visibility: visible; }
+}
+
+@media (max-width: 500px) {
+  #heading svg {
+    width: 90%;
+    margin-bottom: -40;
+  }
+
+  img, .overlay {
+    width: 100%;
+  }
+}
+
