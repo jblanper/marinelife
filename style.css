@@ -113,12 +113,14 @@ img {
 }
 
 @media (max-width: 500px) {
+  #links { justify-content: center; }
+
   #heading svg {
     width: 90%;
     margin-bottom: -40;
   }
 
   img, .overlay {
-    width: 95%;
+    width: 100%;
   }
 }
