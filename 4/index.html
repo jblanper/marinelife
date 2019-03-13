@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marine life</title>
+  <style type="text/css">
+    body {
+      font-family: helvetica, sans-serif;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    #panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-color: white;
+      padding: 0.5em;
+      margin: 1em;
+    }
+
+    #panel p {
+      text-align: center;
+      margin: 0;
+      padding: 5px;
+    }
+
+    #panel svg {
+      display: block;
+      margin: auto;
+    }
+
+    #panel svg:hover path {
+      fill: #38b1b7;
+    }
+  </style>
+</head>
+<body>
+  <div id="panel">
+    <p># 255</p>
+    <a href="../index.html">
+<svg width="35" height="35" version="1.1" viewBox="0 0 13.229166 13.229167" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 -283.77)"><path transform="matrix(.26458 0 0 .26458 0 283.77)" d="m25 5l-20 15v25h5v-23l15-11 15 11v18h-15v-10h5v-5h-10v15h-5v5h25 5v-25l-20-15z" style="paint-order:normal"/></g></svg>
+    </a>
+    <a href="https://github.com/jblanper/marinelife" target="_blank">
+<svg width="35" height="35" version="1.1" viewBox="0 0 13.229166 13.229167" xmlns="http://www.w3.org/2000/svg"><g transform="translate(0 -283.77)"><path d="m6.6208 286.68-1.2972 7.4083h1.3656l1.2968-7.4083z" style="paint-order:normal"/><path d="m4.433 287.69c-1.3008 0.75108-2.6017 1.502-3.9026 2.2531v0.58497c-0.013266 0.11065 0.018061 0.24834 0.004134 0.30954 1.2995 0.75025 2.599 1.5003 3.8985 2.2505v-1.4769c-0.70558-0.40737-1.4111-0.81477-2.1167-1.2222 0.70558-0.40737 1.4111-0.81478 2.1167-1.2221z" style="paint-order:normal"/><path d="m8.794 287.69c1.3008 0.75108 2.6017 1.502 3.9026 2.2531v0.58497c0.01327 0.11065-0.01806 0.24834-0.0041 0.30954-1.2995 0.75025-2.599 1.5003-3.8985 2.2505v-1.4769c0.70558-0.40737 1.4111-0.81477 2.1167-1.2222-0.70558-0.40737-1.4111-0.81478-2.1167-1.2221z" style="paint-order:normal"/></g></svg>
+    </a>
+  </div>
+  <canvas></canvas>
+  <script src="bundle.js"></script>
+</body>
+</html>
