@@ -22,7 +22,7 @@ function setModifiers (waves) {
 
     // modifiers options
     function update () {
-        n += 0.02;
+        n += 0.04;
         waves[0].C = n;
         waves[1].D = Math.sin(n * 0.3) * 45;
         waves[1].C = Math.sin(n * 0.2) * 5;

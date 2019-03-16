@@ -39,7 +39,7 @@ function setModifiers (waves) {
     function modifyOutlinePoint (p, r, a, i, y) {
         // p: point, r: radius, a: angle, i: outline index, y: layer index
         return new Vector(
-            p.x - waves[2].getPoint(y * 0.02),
+            p.x - waves[2].getPoint(y * 0.2),
             p.y
         );
     }
